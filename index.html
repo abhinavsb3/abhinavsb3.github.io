@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav SB - AI Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset and Basic Setup */
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #343a40;
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --card-bg: #ffffff;
+            --border-color: #dee2e6;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        
+        /* Main Container */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Header and Navigation */
+        header {
+            text-align: center;
+            padding-bottom: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        header .subtitle {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            font-family: 'Roboto Mono', monospace;
+            margin: 0.5rem 0 1.5rem;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .contact-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .contact-links a svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        /* Card Styling for Experience and Projects */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.75rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 12px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .card-header span {
+            font-family: 'Roboto Mono', monospace;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        
+        .card p, .card ul {
+            margin-top: 1rem;
+        }
+        
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .technologies {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            margin-top: 1rem;
+        }
+        
+        .project-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 1rem;
+        }
+        
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .skill-category h4 {
+            font-size: 1.1rem;
+            margin: 0 0 0.5rem 0;
+            font-weight: 500;
+        }
+
+        .skill-category p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header Section -->
+        <header>
+            <h1>Abhinav SB</h1>
+            <p class="subtitle">AI Engineer & Backend Developer</p>
+            <div class="contact-links">
+                <!-- Email Icon -->
+                <a href="mailto:abhinavszb@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 4h21A1.5 1.5 0 0 1 24 5.5v13A1.5 1.5 0 0 1 22.5 20h-21A1.5 1.5 0 0 1 0 18.5v-13A1.5 1.5 0 0 1 1.5 4ZM2.178 6l9.57 7.524a1.5 1.5 0 0 0 1.492-.005L21.821 6H2.178Z"/></svg>
+                    <span>Email</span>
+                </a>
+                <!-- GitHub Icon -->
+                <a href="https://github.com/abhinavsb3" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12Z"/></svg>
+                    <span>GitHub</span>
+                </a>
+                <!-- Hugging Face Icon -->
+                <a href="https://huggingface.co/abhinavv3" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.281 12.356c.154-.184.22-.46.035-.673l-1.558-1.798a.512.512 0 0 0-.648-.124l-1.332.61a.512.512 0 0 1-.58.01L14.43 9.213a.512.512 0 0 0-.495-.02l-1.36 1.003a.512.512 0 0 1-.572 0L10.64 9.194a.512.512 0 0 0-.495.019l-2.768 1.168a.512.512 0 0 1-.58-.01l-1.332-.61a.512.512 0 0 0-.648.124l-1.558 1.798c-.184.213-.119.49.035.673l2.843 3.294c.154.184.406.22.613.06l1.36-1.003a.512.512 0 0 1 .573 0l1.363 1.004a.512.512 0 0 0 .495-.02l2.768-1.168a.512.512 0 0 1 .495.02l1.363 1.004a.512.512 0 0 0 .573 0l1.36-1.003c.207.16.458.124.613-.06Z M9.5 7.999a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg>
+                    <span>Hugging Face</span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <!-- Professional Summary Section -->
+            <section id="summary">
+                <h2>Summary</h2>
+                <p>
+                    AI Engineer with hands-on experience in building foundational models, generative AI, large language models (LLMs), and reinforcement learning (RL) systems. Skilled in PyTorch, distributed training, model optimization, fine-tuning, and backend development. Capable of implementing state-of-the-art research for practical applications with strong foundations in scalable system design and deep learning.
+                </p>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Engineer - Backend Developer @ QBurst</h3>
+                        <span>Jul 2022 – Jul 2024</span>
+                    </div>
+                    <ul>
+                        <li>Developed and maintained backend systems using Node.js and MySQL.</li>
+                        <li>Built and deployed RESTful APIs integrated with front-end applications.</li>
+                        <li>Delivered scalable, enterprise-grade backend services.</li>
+                    </ul>
+                    <p class="technologies">Technologies: Node.js, JavaScript, REST APIs, MySQL</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Freelance Backend Developer</h3>
+                        <span>Mar 2024 – Jul 2024</span>
+                    </div>
+                    <ul>
+                        <li>Developed REST APIs to integrate a Moodle backend with a Flutter frontend.</li>
+                        <li>Handled authentication workflows using Firebase.</li>
+                    </ul>
+                    <p class="technologies">Technologies: Node.js, Firebase, Moodle APIs, REST APIs</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>AI Researcher & Developer (Independent)</h3>
+                        <span>Sep 2024 – Present</span>
+                    </div>
+                     <ul>
+                        <li>Building transformer-based LLMs from scratch using PyTorch.</li>
+                        <li>Specializing in model optimization, distributed training, and research implementation.</li>
+                        <li>Focusing on data-parallel training, memory-augmented transformers, and quantization.</li>
+                    </ul>
+                    <p class="technologies">Technologies: PyTorch, Transformers, DDP, Model Quantization, LLMs, Reinforcement Learning</p>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="card">
+                    <h3>Foundational 124M Model (Inspired by nanoGPT)</h3>
+                    <p>Implemented a transformer LLM from scratch using distributed data parallelism and mixed-precision training. The model and code are open-sourced.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/abhinavsb3/GPT-124m" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                        <a href="https://huggingface.co/abhinavv3/GPT-124m" target="_blank" rel="noopener noreferrer">Hugging Face Model</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Modified Memorizing Transformer (Research Project)</h3>
+                    <p>Re-implemented the "Memorizing Transformer" paper with enhancements, including XLAttention, KNNAttention, RoPE, and Grouped Query Attention.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/abhinavsb3/memGPT" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                        <a href="https://huggingface.co/abhinavv3/GPT%20with%20Modified%20Memorizing%20Transformer" target="_blank" rel="noopener noreferrer">Hugging Face Model</a>
+                    </div>
+                </div>
+                 <div class="card">
+                    <h3>On-device Data Analyst Model (In Progress)</h3>
+                    <p>Currently building a foundation model designed to run efficiently on mobile devices, with plans to align the model for specific use cases using Proximal Policy Optimization (PPO).</p>
+                </div>
+            </section>
+            
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Core Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>LLMs & Transformers</h4>
+                        <p>Model Architectures, Fine-Tuning, RoPE, Grouped Query Attention (GQA)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Model Training & Optimization</h4>
+                        <p>PyTorch, Distributed Data Parallel (DDP), Mixed Precision, Sharded Datasets, Quantization</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend Development</h4>
+                        <p>Node.js, JavaScript, MySQL, Firebase, REST APIs</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Research & Engineering</h4>
+                        <p>NLP, RLHF, Memorizing Transformers, SOTA Implementation</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Designed and built by Abhinav SB.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
